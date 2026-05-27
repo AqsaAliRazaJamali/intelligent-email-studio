@@ -248,7 +248,7 @@ with tab1:
     incoming_email = st.text_area(
         "Paste Incoming Raw Communication Workspace:", 
         height=180, 
-        placeholder='Hi team, thanks for the hard work on the beta release. We need to schedule a mandatory review meeting this Thursday at 2:00 PM...',
+        placeholder="Paste your unorganized inbox email content here...",
         key="inc_box"
     )
     
@@ -281,7 +281,7 @@ with tab1:
                     # Render beautiful clean structured view output exactly matching requirements
                     st.markdown("<div class='analysis-container'>", unsafe_allow_html=True)
                     st.caption(f"✨ {status_msg}")
-                    st.markdown("<h3 style='color:#0f172a; margin-bottom:1.5rem;'>📊 Email Metadata Dashboard</h3>", unsafe_allow_html=True)
+                    st.markdown("<h3 style='color:#0f172a; margin-bottom:1.5rem;'> Email Metadata Dashboard</h3>", unsafe_allow_html=True)
                     
                     # Core Layout Badges Row
                     col_c, col_p, col_a = st.columns(3)
@@ -322,13 +322,13 @@ with tab1:
 # -------------------------------------------------------------------------
 with tab2:
     st.markdown("<br>", unsafe_allow_html=True)
-    recipient = st.text_input("Recipient Identity / Designation Name:", placeholder="e.g., Dr. Faisal")
+    recipient = st.text_input("Recipient Identity / Designation Name:", placeholder="e.g., Dr. Andrew")
     sender = st.text_input("Your Name (Sender):", placeholder="e.g., Aqsa")
     tone = st.selectbox("Strategic Email Voice Tone dropdown:", ["formal", "apologetic", "friendly", "persuasive"])
     context = st.text_area(
         "Core Intent Input (Context Guidelines):", 
         height=120, 
-        placeholder="I need a two-day extension on the machine learning project because my local development server crashed..."
+        placeholder="Briefly state the raw thoughts or context behind your message..."
     )
     
     if st.button("Generate Polished Draft Workspace", use_container_width=True):
@@ -353,11 +353,11 @@ with tab3:
     thread = st.text_area(
         "Received Email Thread Logs:", 
         height=140, 
-        placeholder='"Hey, are you free to jump on a quick Zoom call today at 4:30 PM to debug the Streamlit UI formatting issues?"'
+        placeholder="Paste the email thread history here..." 
     )
     intent = st.text_input(
         "Your Intended Answer / Brief Notes Directives:", 
-        placeholder='"Can\'t do 4:30, stuck in another session. Available at 6:00 PM instead. Tell him to send the calendar link."'
+        placeholder="e.g., Can't do 4:30, available at 6:00 PM instead." 
     )
     
     if st.button("Generate Contextual Smart Reply Node", use_container_width=True):
