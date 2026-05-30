@@ -1,5 +1,12 @@
 # ✉️ Intelligent Email Studio
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logoColor=white)
+![AI Powered](https://img.shields.io/badge/AI-Powered-blueviolet?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 An AI-powered communication workspace designed to streamline professional email workflows through intelligent automation, contextual understanding, and polished content generation.
 
 Built using Google's Gemini 2.5 Flash and Groq-powered Llama 3.1 failover routing, the platform helps users analyze incoming emails, draft professional responses, and generate context-aware replies efficiently.
